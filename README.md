@@ -1,7 +1,7 @@
 # Queen CSS Framework - Web Dev StarterKit
 
 # Version
-- [Alpha] 1.1.0
+- [Alpha] 1.0.3
 
 # License
 - MIT License
