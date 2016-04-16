@@ -1,0 +1,9 @@
+// ---
+// @mixin | Outline
+// ---
+
+@mixin -outline($px: 1px, $style: dashed, $color: $red) {
+    outline-width: $px;
+    outline-style: $style;
+    outline-color: $color;
+}

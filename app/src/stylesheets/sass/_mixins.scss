@@ -1,0 +1,18 @@
+// ----
+// @mixins
+// ----
+@import 'mixins/background';
+@import 'mixins/border';
+@import 'mixins/clearfix';
+@import 'mixins/container';
+@import 'mixins/responsive';
+@import 'mixins/grid-framework';
+@import 'mixins/outline';
+@import 'mixins/pseudo-content';
+@import 'mixins/reset-display';
+@import 'mixins/typography';
+
+// ----
+// @mixins plugins
+// ----
+@import 'mixins/plugins/fontAwesome';

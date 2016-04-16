@@ -1,0 +1,20 @@
+// [ With Label ] 
+form.form-oneline
+    .group
+        label(for="exampleEmail2") Email
+        input#exampleEmail2.input(type="email" placeholder="Email")
+    .group
+        label(for="examplePassword2") Password
+        input#examplePassword2.input(type="password" placeholder="Password")
+    .group
+        button.btn.btn--md.btn-square(type="submit") Sign In
+
+= '\n'
+// [ No Label ] 
+form.form-oneline
+    .group
+        input.input(type="email" placeholder="Email")
+    .group
+        input.input(type="password" placeholder="Password")
+    .group
+        button.btn.btn--md.btn-square(type="submit") Sign In

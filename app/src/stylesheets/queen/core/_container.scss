@@ -1,0 +1,11 @@
+// ---
+// container
+// ---
+
+.container,
+.container-fl {
+    @include -clearfix;
+}
+
+.container    { @include -container; }
+.container-fl { @include -container(100%); }

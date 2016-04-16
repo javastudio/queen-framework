@@ -1,0 +1,77 @@
+.row
+    .grid.grid-md--6
+        p Context on row
+        table.table
+            thead
+                tr
+                    th.center #
+                    th Context
+                    th Class
+            tbody
+                tr.active
+                    td.center 1
+                    td Active
+                    td: code .active
+                tr: td(colspan='3')
+                tr.primary
+                    td.center 2
+                    td Primary
+                    td: code .primary
+                tr: td(colspan='3')
+                tr.success
+                    td.center 3
+                    td Success
+                    td: code .success
+                tr: td(colspan='3')
+                tr.info
+                    td.center 4
+                    td Info
+                    td: code .info
+                tr: td(colspan='3')
+                tr.warning
+                    td.center 5
+                    td Warning
+                    td: code .warning
+                tr: td(colspan='3')
+                tr.danger
+                    td.center 6
+                    td Danger
+                    td: code .danger
+    .grid.grid-md--6
+        p Context on cell (column)
+        table.table
+            thead
+                tr
+                    th.active.center #
+                    th.info Context
+                    th.warning Class
+            tbody
+                tr
+                    td.active.center 1
+                    td Active
+                    td: code .active
+                tr: td(colspan='3')
+                tr
+                    td.center 2
+                    td.primary Primary
+                    td: code .primary
+                tr: td(colspan='3')
+                tr
+                    td.center 3
+                    td Success
+                    td.success: code .success
+                tr: td(colspan='3')
+                tr
+                    td.center 4
+                    td Info
+                    td.info: code .info
+                tr: td(colspan='3')
+                tr
+                    td.center 5
+                    td.warning Warning
+                    td: code .warning
+                tr: td(colspan='3')
+                tr
+                    td.danger.center 6
+                    td Danger
+                    td: code .danger

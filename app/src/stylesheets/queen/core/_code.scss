@@ -1,0 +1,21 @@
+// ---
+// code | kbd
+// ---
+
+code, kbd {
+    font-weight: normal;
+    font-size: 14px;
+    padding: 2.5px 5px;
+    border-radius: 2px;
+}
+
+code {
+    @include -bg-color(bleach(brand-color(danger), 90%));
+    
+    color: bleach(brand-color(danger), 5%);
+}
+
+kbd {
+    background: bleach($black, 20%);
+    color: #fff;
+}

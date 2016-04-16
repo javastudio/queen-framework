@@ -1,0 +1,20 @@
+// ---
+// @mixin | Grid Framework
+// ---
+
+@mixin -span-grid($i: $grid-columns, $override-columns: $grid-columns) {
+    $width: $i / $override-columns; // default -> $grid-columns
+    width: percentage($width);
+    min-height: 1px;
+    display: block;
+    float: left;
+    *zoom: 1;
+}
+
+// ---
+// Shift Grid / offset grid
+// ---
+@mixin -shift-grid($i: $grid-columns, $override-columns: $grid-columns) {
+    $shift: $i / $override-columns;
+    margin-left: percentage($shift);
+}

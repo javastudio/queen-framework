@@ -1,0 +1,41 @@
+// ---
+// @mixin  Border Style
+// ---
+
+@mixin -border-width($width: 1px) {
+    border-width: $width;
+}
+
+@mixin -border-style($style: solid) {
+    border-style: $style;
+}
+
+@mixin -border-color($color: $default) {
+    border-color: $color;
+}
+
+@mixin -border-top($px: 1px, $style: solid, $color: $black) {
+    border-top: $px $style;
+    border-top-color: $color;
+}
+
+@mixin -border-right($px: 1px, $style: solid, $color: $black) {
+    border-right: $px $style;
+    border-right-color: $color;
+}
+
+@mixin -border-bottom($px: 1px, $style: solid, $color: $black) {
+    border-bottom: $px $style;
+    border-bottom-color: $color;
+}
+
+@mixin -border-left($px: 1px, $style: solid, $color: $black) {
+    border-left: $px $style;
+    border-left-color: $color;
+}
+
+@mixin -border($px: 1px, $style: solid, $color: $black) {
+    @include -border-width($px);
+    @include -border-style($style);
+    @include -border-color($color);
+}

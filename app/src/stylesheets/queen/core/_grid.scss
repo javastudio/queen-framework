@@ -1,0 +1,51 @@
+// ---
+// # Grid System
+// ---
+
+
+// ---
+// @breakpoint
+// ---
+$make-columns: (12);
+$mobile:  breakpoint(min-width 320px max-width 480px);
+$tablet:  breakpoint(min-width 481px max-width 768px);
+$desktop: breakpoint(min-width 769px max-width 1024px);
+$wide:    breakpoint(min-width 1025px);
+
+.row {
+    @include -clearfix;
+
+    display: inline-block;
+    clear: both;
+    width: 100%;
+
+    // ---
+    // Base Span Grid
+    // ---
+    [class*=#{$grid-namespace}] {
+        padding-left: $gutter / 2;
+        padding-right: $gutter / 2;
+    }
+
+    @each $of-col in $make-columns {
+        @for $i from 1 through $of-col {
+            // ----
+            // Grid / Columns
+            // ----
+            .span__#{$i}-of-#{$of-col} { @include -span-grid($i, $of-col); }
+            .grid-lg__#{$i}-of-#{$of-col} { @include -responsive($wide)    { @include -span-grid($i, $of-col); } }
+            .grid-md__#{$i}-of-#{$of-col} { @include -responsive($desktop) { @include -span-grid($i, $of-col); } }
+            .grid-sm__#{$i}-of-#{$of-col} { @include -responsive($tablet)  { @include -span-grid($i, $of-col); } }
+            .grid-xs__#{$i}-of-#{$of-col} { @include -responsive($mobile)  { @include -span-grid($i, $of-col); } }
+
+            // ----
+            // Shift Grid / Offset
+            // ----
+            .shift-span__#{$i}-of-#{$of-col} { @include -shift-grid($i, $of-col); }
+            .shift-lg__#{$i}-of-#{$of-col} { @include -responsive($wide)    { @include -shift-grid($i, $of-col); } }
+            .shift-md__#{$i}-of-#{$of-col} { @include -responsive($desktop) { @include -shift-grid($i, $of-col); } }
+            .shift-sm__#{$i}-of-#{$of-col} { @include -responsive($tablet)  { @include -shift-grid($i, $of-col); } }
+            .shift-xs__#{$i}-of-#{$of-col} { @include -responsive($mobile)  { @include -shift-grid($i, $of-col); } }
+        }
+    }
+}

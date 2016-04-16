@@ -1,0 +1,14 @@
+// ---
+// mix color to white
+// ---
+@function bleach($color, $percent) {
+    @return mix(#fff, $color, $percent);
+}
+
+
+// ---
+// mix color to black
+// ---
+@function bleak($color, $percent) {
+    @return mix(#000, $color, $percent);
+}

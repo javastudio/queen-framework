@@ -1,0 +1,7 @@
+// ---
+// @mixin | background-color
+// ---
+
+@mixin -bg-color($bg : $black) {
+    background-color: $bg;
+}

@@ -1,0 +1,22 @@
+.row: .grid-lg__12-of-12
+    header.head-link.h4 Code
+
+    .qn-example
+        .qn-preview(data-example='code')
+            .eg-title Example
+            table
+                tr
+                    td: p: strong= '<code>'
+                    td &nbsp;
+                    td: p: strong: code class="className"
+                tr
+                    td: p: strong= '<kbd>'
+                    td &nbsp;
+                    td: p: strong: kbd= '<div id="appId__Name">hello world!</div>'
+
+        .qn-code
+            .eg-title Code
+            pre.line-numbers: code.language-html
+                = '<code> class="className" </code>'
+                = '\n '
+                = '\n <kbd>&lt;div id=&quot;appId__Name&quot;&gt;hello world!&lt;/div&gt;</kbd>'

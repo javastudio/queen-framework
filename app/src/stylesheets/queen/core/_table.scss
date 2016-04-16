@@ -1,0 +1,57 @@
+// ---
+// table
+// ---
+
+table[class*=table] {
+    width: 100%;
+    text-align: left;
+    color: $black;
+    font-family: $helvetica;
+
+    thead th {
+        @include -border-top(2px, solid, bleach(brand-color(default), 30%));
+        @include -border-bottom(2px, solid, bleach(brand-color(default), 30%));
+
+        padding: 10px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    tbody td {
+        @include -border-bottom(1px, solid, $lightgrey);
+
+        padding: 7px 10px;
+    }
+
+    thead, tbody {
+        .active { @include -bg-color(bleach(brand-color(default), 90%)); }
+        @each $brand in map-keys($brand-color) {
+            .#{$brand} {
+                background: bleach(map-get($brand-color, $brand), 60%);
+            }
+        }
+    }
+}
+
+
+.table {
+    &-striped tbody > tr {
+        &:nth-of-type(odd) {
+            @include -bg-color(bleach(brand-color(default), 90%));
+        }
+    }
+
+    &-hovered tbody > tr {
+        &:hover {
+            @include -bg-color(bleach(brand-color(primary), 75%));
+        }
+    }
+
+    &-border {
+        @include -border(1px, solid, brand-color(default));
+
+        th, td {
+            @include -border-right(1px, solid, brand-color(default));
+        }
+    }
+}

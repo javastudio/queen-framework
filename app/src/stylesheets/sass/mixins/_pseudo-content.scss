@@ -1,0 +1,21 @@
+// ---
+// @mixin | pseudo-content
+// ---
+
+// @mixin -before($content: false) {
+//     &::before {
+//         @if $content {
+//             content: $content;
+//             margin-right: em(5);
+//         }
+//     }
+// }
+
+// @mixin -after($content: false) {
+//     &::after {
+//         @if $content {
+//             content: $content;
+//             margin-left: em(5);
+//         }
+//     }
+// }

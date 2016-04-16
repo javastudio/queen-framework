@@ -1,0 +1,49 @@
+.row: .grid-lg__12-of-12
+    header.head-link.h4 Button
+
+    .pen-primary
+        .pen-title.h6 Basic Button
+        p Deklarasikan button dengan mengawali property className <kbd>class="btn"</kbd> lalu di ikuti dengan class ukuran &amp; class style.
+
+    .pen-warning
+        .pen-title.h6 Ukuran Button
+        p Merubah ukuran button, cukup dengan menggunakan
+        ul
+            li: <code>class="btn--lg"</code> untuk ukuran large atau
+            li: <code>class="btn--md"</code> untuk ukuran medium atau
+            li: <code>class="btn--sm"</code> untuk ukuran small.
+            li: <code>class="btn--xs"</code> untuk ukuran xsmall.
+
+    .pen-warning
+        .pen-title.h6 Theme/Style Button
+        p Mengganti theme / style button, cukup dengan mengganti / menggunakan class style dari yg tersedia
+        ul
+            li Default  
+                code class="btn-[style]"
+            li Variant Color  
+                code class="btn-[style]--[variant color name]"
+    .pen-warning
+        p.pen-title Example
+        ul
+            li: code class="btn-square"
+            li: code class="btn-pill"
+            li: code class="btn-list"
+            li: code class="btn-square--dark"
+            li: code class="btn-pill--primary"
+            li: code class="btn-list--success"
+            li: code class="btn-square--warning"
+            li: code class="btn-pill--danger"
+
+    .pen-warning
+        p: strong Lihat Tabel dari penggunaan class button.
+
+    .qn-example
+        //- Button Preview
+        .qn-preview(data-example='button')
+            .eg-title Example
+            include ./../../example/button-preview.jade
+
+        //- Button Code
+        .qn-code
+            .eg-title Code
+            pre.line-numbers(data-src='../example/button-code.html')

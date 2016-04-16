@@ -1,0 +1,36 @@
+// ---
+// * @ Font Awesome | CDN
+// * CSS    : https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css
+// * MinCSS : https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+// * Cheatsheet : http://fontawesome.io/cheatsheet/
+// ---
+
+@mixin -font-awesome($content) {
+    @if $font-awesome == false {
+        @warn 'Font Awesome Plugin is false. Setting the variable [$fontAwesome : true] with global flag!';
+    } @else {
+        // /*!
+        //  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+        //  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+        // **/
+        $cdn: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0';
+
+        @font-face {
+            font-family: 'FontAwesome';
+            font-weight: normal;
+            font-style: normal;
+            src: url('#{$cdn}/fonts/fontawesome-webfont.eot?v=4.5.0');
+            src: url('#{$cdn}/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('#{$cdn}/fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('#{$cdn}/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('#{$cdn}/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('#{$cdn}/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+        }
+
+        &::before {
+            content: $content;
+            font-style: normal;
+            font-weight: normal;
+            font-family: 'FontAwesome';
+            margin-right: em(5);
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// ----
+// @mixin
+// @typography
+// ----
+
+@mixin -base-typography($fw: 700, $fs: normal) {
+    font-weight: $fw;
+    font-style: $fs;
+    line-height: 1.45;
+    font-family: $opensans;
+    vertical-align: baseline;
+    margin: 0;
+    margin-bottom: rem(5);
+}

@@ -1,0 +1,11 @@
+// ---
+// Typography
+// ---
+
+h1, .h1 { @include -base-typography;      font-size: em(36); }
+h2, .h2 { @include -base-typography;      font-size: em(32); }
+h3, .h3 { @include -base-typography;      font-size: em(28); }
+h4, .h4 { @include -base-typography;      font-size: em(24); }
+h5, .h5 { @include -base-typography;      font-size: em(20); }
+h6, .h6 { @include -base-typography;      font-size: em(18); }
+p,  .p  { @include -base-typography(500); font-size: em(16); }

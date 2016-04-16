@@ -1,0 +1,25 @@
+// ---
+// @mixin | Clear Fix
+// ---
+
+@mixin -clearfix($space-before: 0, $space-after: 0) {
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+    }
+
+    &::before {
+        @if $space-before > 0 {
+            margin-top: em($space-before);
+        }
+    }
+
+    &::after {
+        clear: both;
+
+        @if $space-after > 0 {
+            margin-bottom: em($space-after);
+        }
+    }
+}

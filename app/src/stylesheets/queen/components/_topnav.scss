@@ -1,0 +1,74 @@
+.topnav {
+    // - Global
+    @include -clearfix();
+    
+    width: 100%;
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #727272;
+
+    // - Element
+    &__list-inline {
+        @include -clearfix();
+        display: block;
+    }
+        
+    li {
+        float: left;
+        border-left: 1px solid $grey;
+        margin: 0;
+        &:last-child {
+            border-right: 1px solid $grey;
+        }
+    }
+    
+    a {
+        background: $lightgrey;
+        color: #fff;
+        display: block;
+        padding: em(12) em(20);
+
+        &:hover {
+            color: darken($black, 5%);
+            background: lighten($lightgrey, 15%);
+        }
+    }
+
+    // - Theme Default
+    &--default {
+        background: $lightgrey;
+    }
+
+    // - Theme Dark
+    &--dark {
+        background: $black;
+        a {
+            background: $black;
+            color: $lightgrey;
+            &:hover {
+                background: $wood-c;
+            }
+        }
+    }
+
+    //- Theme Wood
+    &--wood {
+        background: $wood-c;
+        a {
+            background: $wood-c;
+            &:hover {
+                color: darken($blue, 40%);
+                background: $blue;
+            }
+        }
+    }
+}
+
+// Reposition
+.topnav--fix {
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}

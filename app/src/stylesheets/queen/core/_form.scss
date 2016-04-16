@@ -1,0 +1,79 @@
+// ----
+// Form
+// ----
+form {
+    label {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    input, select, textarea, .input {
+        width: 100%;
+    }
+
+    input, select, textarea, label, .input {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    // ----
+    // Add style input
+    // ----
+    .input {
+        @include -border(1px, solid, bleach(brand-color(default), 50%));
+
+        border-radius: 2px;
+        font-size: em(14);
+        color: bleak(brand-color(primary), 75%);
+        padding: {
+            top: 5px;
+            bottom: 5px;
+            left: 10px;
+            right: 10px;
+        };
+    }
+
+    // ----
+    // Wrap from for optimum spacing
+    // ----
+    .group {
+        &::before, &::after {
+            content: ' ';
+            display: table;
+        }
+
+        &::after {
+            clear: left;
+            margin-bottom: em(16);
+        }
+    }
+}
+
+// ----
+// One Line Bar | Style Form
+// ----
+.form-oneline {
+    display: block;
+
+    .group {
+        margin-right: 10px;
+        display: inline-block;
+
+        .input {
+            width: inherit;
+        }
+    }
+}
+
+// ----
+// Inline Bar | Style Form
+// ----
+.form-inline {
+    display: block;
+
+    .group {
+        label, input, select, textarea, .input {
+            float: left;
+        }
+    }
+}

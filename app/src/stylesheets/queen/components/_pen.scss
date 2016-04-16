@@ -1,0 +1,17 @@
+// ----
+// Pen
+// ----
+
+@each $pen in map-keys($brand-color) {
+    .pen-#{$pen} {
+        @include -border-left(5px, solid, map-get($brand-color, $pen));
+
+        margin-bottom: 12px;
+        background-color: bleach(map-get($brand-color, $pen), 90%);
+        padding: em(16);
+
+        .pen-title {
+            color: bleak(map-get($brand-color, $pen), 50%);
+        }
+    }
+}

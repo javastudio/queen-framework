@@ -1,0 +1,10 @@
+// Not function for Libsass compatibility
+// https://github.com/sass/libsass/issues/368
+@function is-not($value) {
+    @return if($value, false, true);
+}
+
+// Checks if a number is even
+@function is-even($int) {
+    @return $int % 2 == 0;
+}

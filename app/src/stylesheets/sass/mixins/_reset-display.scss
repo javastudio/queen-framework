@@ -1,0 +1,8 @@
+// ---
+// @mixin | reset display (margin, padding)
+// ---
+
+@mixin -reset-display {
+    margin: 0;
+    padding: 0;
+}

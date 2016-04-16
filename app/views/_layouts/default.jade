@@ -1,0 +1,15 @@
+doctype html
+html.main-site(data-site="framework" lang="id")
+    head: include ./_partials/head.jade
+
+    body
+        .container: .row
+            aside.fixed.grid-lg__2-of-12.grid-md__2-of-12
+                include ./_partials/main-nav.jade
+                block sidebar
+
+            main.rel.shift-lg__2-of-12.shift-md__2-of-12.grid-lg__10-of-12.grid-md__10-of-12
+                block content
+
+        // [script] 
+        include ./_partials/scripts.jade

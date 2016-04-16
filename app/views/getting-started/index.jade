@@ -1,0 +1,25 @@
+extends ./../_layouts/default.jade
+block meta
+    title Getting Started <%= siteTitle %>
+
+block sidebar
+    include ./../_includes/getting-started/sidebar-list-of-content.jade
+
+block content
+    section#overview
+        include ./../_includes/getting-started/overview.jade
+
+    section#download
+        include ./../_includes/getting-started/download.jade
+
+    section#sass
+        include ./../_includes/getting-started/sass.jade
+
+    section#github
+        include ./../_includes/getting-started/github.jade
+
+    section#license
+        include ./../_includes/getting-started/license.jade
+
+    section#faq
+        include ./../_includes/getting-started/faq.jade

@@ -1,0 +1,40 @@
+// ---
+// blockquote
+// ---
+
+blockquote {
+    padding: em(25) em(10) em(15) em(30);
+    border-left: em(5) solid #0e3a58;
+    color: #0b0a2b;
+    background: rgba(#f9f6db, 1);
+    position: relative;
+
+    .text-quote {
+        position: relative;
+        left: em(50);
+        display: block;
+        &::before {
+            content: '\201C';
+            display: inline-block;
+            font-weight: 700;
+            font-size: em(100);
+            position: absolute;
+            top: -40px;
+            left: -55px;
+            color: bleach(#0b0a2b, 65%);
+        }
+    }
+
+    .name {
+        font-style: normal;
+        color: #382d2a;
+        display: block;
+        clear: both;
+        margin-left: 55px;
+        &::before {
+            content: '\2014';
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// ---
+// Orderlist | Unorderlist
+// ---
+
+// - List Vertical
+.list-vertical {
+    li {
+        @include -clearfix(5, 5);
+    }
+
+    &--sub {
+        li {
+            padding-left: em(20);
+        }
+    }
+}

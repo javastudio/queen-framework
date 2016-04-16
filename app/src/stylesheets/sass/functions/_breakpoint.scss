@@ -1,0 +1,13 @@
+// ---
+// @breakpoint
+// ---
+
+@function breakpoint($query: $base-media-feature $base-min-width, $override-columns: $grid-columns) {
+    @if length($query) == 1 {
+        $query: nth($query, 1) $override-columns;
+    } @else if is-even(length($query)) {
+        $query: append($query, $override-columns);
+    }
+
+    @return $query;
+}

@@ -1,0 +1,7 @@
+@function brand-color($key) {
+    @if not map-has-key($brand-color, $key) {
+        @warn "Key `#{$key}` not found in $brand-color map.";
+    }
+
+    @return map-get($brand-color, $key);
+}
