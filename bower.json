@@ -1,6 +1,6 @@
 {
   "name": "queen-framework",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "description": "Queen CSS Framework & SASS Q3",
   "main": "app/dist/css/queen.min.css",
   "authors": [
