@@ -1,0 +1,21 @@
+// ---
+// @import 'queen-sass'
+// Font Awesome AddOns;
+// ---
+$font-awesome: true;
+@import 'queen';
+
+// ----
+// Docs Style
+// ----
+@import 'docs-style';
+
+// ----
+// Data Example | Framework Inject
+// ----
+@import 'data-example';
+
+// ----
+// Syntax Highlight | Prism.js
+// ----
+@import 'prism';

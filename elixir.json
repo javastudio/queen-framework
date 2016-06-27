@@ -1,0 +1,30 @@
+{
+  "sourcemaps": false,
+  "publicPath": "./public",
+  "assetsPath": "./app/assets",
+  "viewPath": "./app/views",
+  "css": {
+    "sass": {
+      "pluginOptions": {
+        "includePaths": "app/assets/sass"
+      }
+    }
+  },
+  "clean": {
+    "sourceFolder": [
+      ".tmp",
+      ".temp",
+      ".sass-cache",
+      "./public"
+    ],
+    "read": false,
+    "pluginOptions": {
+      "force": true
+    }
+  },
+  "server": {
+    "proxy": false,
+    "baseDir": "./public",
+    "host": "http://localhost:3000"
+  }
+}

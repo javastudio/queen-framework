@@ -2,9 +2,10 @@
   "name": "queen-framework",
   "version": "0.0.1",
   "description": "Queen CSS Framework & SASS Q3",
-  "main": "app/dist/css/queen.min.css",
   "scripts": {
-    "test": "echo 'test'"
+    "test": "echo 'test'",
+    "prod": "gulp --production",
+    "watch": "gulp watch"
   },
   "homepage": "http://iguntur.info/app/queen-framework",
   "license": "MIT",
@@ -19,39 +20,19 @@
   "bugs": {
     "url": "https://github.com/iguntur/queen-framework/issues"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "~2.11.*",
+  "dependencies": {
+    "font-awesome": "^4.6.3",
     "gulp": "~3.9.*",
-    "gulp-autoprefixer": "~3.1.*",
-    "gulp-clean": "~0.3.*",
-    "gulp-clean-css": "~2.0.*",
-    "gulp-concat": "~2.6.*",
-    "gulp-csslint": "~0.2.*",
-    "gulp-data": "^1.2.1",
-    "gulp-header": "~1.7.*",
-    "gulp-htmlhint": "^0.3.1",
-    "gulp-jade": "~1.1.*",
-    "gulp-jshint": "~2.0.*",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-notify": "~2.2.*",
-    "gulp-plumber": "~1.1.*",
-    "gulp-remove-empty-lines": "~0.0.*",
-    "gulp-sass": "~2.2.*",
-    "gulp-scss-lint": "^0.3.9",
-    "gulp-sequence": "^0.4.5",
-    "gulp-sourcemaps": "~1.6.*",
-    "gulp-strip-css-comments": "~1.2.*",
-    "gulp-template": "^3.1.0",
-    "gulp-uglify": "~1.5.*",
-    "gulp-util": "~3.0.*",
-    "gulp-watch": "~4.3.*",
-    "jshint": "~2.9.*",
-    "jstransformer": "~0.0.*",
-    "jstransformer-marked": "~1.0.*",
-    "scss-lint": "0.0.0"
+    "gulp-jade": "^1.1.0",
+    "jstransformer-verbatim": "^1.0.0",
+    "laravel-elixir": "*",
+    "queen-framework": "git://github.com/javastudio/queen-framework.git#master"
   },
-  "engines": {
-    "node": ">=0.10.1"
+  "devDependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp-csslint": "^0.3.1",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-util": "^3.0.7"
   }
 }

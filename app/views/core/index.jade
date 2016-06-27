@@ -1,31 +1,31 @@
-extends ./../_layouts/default.jade
+extends ./../layouts/_default.jade
 block meta
-    title CSS Core <%= siteTitle %>
+    title CSS Core | #{title}
 
 block sidebar
-    include ./../_includes/core/table-of-content.jade
+    include partials/_table-of-content.jade
 
 block content
     section.row#container
-        include ./../_includes/core/container.jade
+        include partials/_container.jade
 
     section.row#gridSystem
-        include ./../_includes/core/grid-system.jade
+        include partials/_grid-system.jade
 
     section.row#code
-        include ./../_includes/core/code.jade
+        include partials/_code.jade
 
     section.row#table
-        include ./../_includes/core/table.jade
+        include partials/_table.jade
 
     section.row#button
-        include ./../_includes/core/button.jade
+        include partials/_button.jade
 
     section.row#form
-        include ./../_includes/core/form.jade
+        include partials/_form.jade
 
     section.row#typography
-        include ./../_includes/core/typography.jade
+        include partials/_typography.jade
 
     section.row#blockquote
-        include ./../_includes/core/blockquote.jade
+        include partials/_blockquote.jade

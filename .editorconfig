@@ -9,7 +9,7 @@ indent_style = space
 end_of_line = lf
 indent_size = 4
 
-[{package.json,*.yml}]
+[{*.json,*.yml}]
 indent_style = space
 indent_size = 2
 
