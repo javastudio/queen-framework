@@ -1,8 +1,9 @@
 {
   "sourcemaps": false,
-  "publicPath": "./public",
-  "assetsPath": "./app/assets",
-  "viewPath": "./app/views",
+  "publicPath": "public",
+  "assetsPath": "app/assets",
+  "viewPath": "app/views",
+  "docAssetsPath": "./app/assets/docs",
   "css": {
     "sass": {
       "pluginOptions": {

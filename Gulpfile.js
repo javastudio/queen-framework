@@ -2,7 +2,6 @@ var Elixir = require('laravel-elixir');
 var config = Elixir.config;
 var pkg = require('./package.json');
 
-// require('./tasks/jade');
 require('require-dir')('./tasks');
 
 /*
@@ -27,18 +26,18 @@ Elixir(function(app) {
      * Font Application
      */
     app.copy('./node_modules/font-awesome/fonts', './public/assets/fonts');
-    app.copy(config.assetsPath+'/docs/images', './public/assets/img');
+    app.copy(config.docAssetsPath+'/images', './public/assets/img');
 
     /**
      * Docs Stylesheet Application
      */
-    app.sass(config.assetsPath+'/docs/stylesheets/app.scss', './public/assets/css/app.css');
+    app.sass(config.docAssetsPath+'/stylesheets/app.scss', './public/assets/css/app.css');
 
     /**
      * Javascript Application
      */
     app.browserify('queen.js', './public/assets/js/queen.js');
-    app.scriptsIn(config.assetsPath + '/docs/scripts', './public/assets/js/app.js');
+    app.scriptsIn(config.docAssetsPath+'/scripts', './public/assets/js/app.js');
 
     /**
      * Docs HTML Application

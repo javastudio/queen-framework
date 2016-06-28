@@ -22,17 +22,17 @@
   },
   "dependencies": {
     "font-awesome": "^4.6.3",
-    "gulp": "~3.9.*",
+    "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-util": "^3.0.7",
     "jstransformer-verbatim": "^1.0.0",
-    "laravel-elixir": "*",
-    "queen-framework": "git://github.com/javastudio/queen-framework.git#master"
+    "laravel-elixir": "^5.0.0",
+    "require-dir": "^0.3.0"
   },
   "devDependencies": {
     "gulp-clean": "^0.3.2",
     "gulp-csslint": "^0.3.1",
-    "gulp-htmlhint": "^0.3.1",
-    "gulp-load-plugins": "^1.2.4",
-    "gulp-util": "^3.0.7"
+    "gulp-htmlhint": "^0.3.1"
   }
 }
