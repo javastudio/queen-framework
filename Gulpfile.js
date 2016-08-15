@@ -55,12 +55,12 @@ Elixir(function(app) {
     /**
      * CSS Lint
      */
-    app.lintCss({
-        source: [
-            config.publicPath + "/**/*.css"
-        ],
-        rcFile: ".csslintrc"
-    });
+    // app.lintCss({
+    //     source: [
+    //         config.publicPath + "/**/*.css"
+    //     ],
+    //     rcFile: ".csslintrc"
+    // });
 
     /**
      * CSS Lint
@@ -76,9 +76,12 @@ Elixir(function(app) {
      * BrowserSync
      */
     app.browserSync({
+        notify: false,
         server: config.server.baseDir,
         proxy: config.server.proxy,
-        notify: false
+        files: [
+            './public/**/*.html',
+        ]
     });
 
 });
